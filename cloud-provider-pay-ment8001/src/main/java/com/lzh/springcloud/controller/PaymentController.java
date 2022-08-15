@@ -20,7 +20,7 @@ public class PaymentController {
         log.info(String.valueOf(payment));
         int result = paymentService.create(payment);
         log.info("*****插入结果："+result);
-        log.info("successs ");
+        log.info("success ");
 
         if(result > 0)
         {
