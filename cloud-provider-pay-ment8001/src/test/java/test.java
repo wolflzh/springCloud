@@ -1,5 +1,7 @@
 public class test {
     public static void main(String[] args) {
-        System.out.println("888888888");
+        String a = "88888,,,,8888";
+
+        System.out.println(a.replace(",","&"));
     }
 }
