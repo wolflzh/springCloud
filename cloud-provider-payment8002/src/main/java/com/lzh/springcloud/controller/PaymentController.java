@@ -42,9 +42,9 @@ public class PaymentController {
         log.info("****查询结果: "+payment);
 
         if (payment != null){
-            return new CommonResult(200,"查询成功",payment);
+            return new CommonResult(200,"查询成功"+serverPort,payment);
         }else {
-            return new CommonResult(500,"查询失败:"+id+"无对应记录！",null);
+            return new CommonResult(500,"查询失败:"+id+"无对应记录！"+serverPort,null);
         }
     }
 }
